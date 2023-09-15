@@ -1,0 +1,636 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     23392,        626]
+NotebookOptionsPosition[     23043,        612]
+NotebookOutlinePosition[     23436,        628]
+CellTagsIndexPosition[     23393,        625]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"plot", ",", "formula"}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"plot", "=", 
+       RowBox[{"Which", "[", 
+        RowBox[{
+         RowBox[{"func", "\[Equal]", "1"}], ",", 
+         RowBox[{"Plot3D", "[", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", 
+             RowBox[{"2", "*", 
+              RowBox[{"(", 
+               RowBox[{"1", "-", 
+                SqrtBox[
+                 SubscriptBox["x", "1"]]}], ")"}]}]], 
+            RowBox[{"(", 
+             RowBox[{
+              SubscriptBox["x", "1"], "-", 
+              SqrtBox[
+               SubscriptBox["x", "1"]], "+", 
+              RowBox[{"\[Sqrt]", 
+               RowBox[{"(", 
+                RowBox[{
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}], "2"], "+", 
+                 RowBox[{"4", "*", 
+                  RowBox[{"Min", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["x", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "x"}]}], ",", 
+                    RowBox[{
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["y", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "y"}]}]}], 
+                   "]"}], "*", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "-", 
+                    SubscriptBox["x", "1"]}], ")"}], "*", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+           ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+           RowBox[{"PlotStyle", "\[Rule]", 
+            RowBox[{"{", "Orange", "}"}]}], ",", 
+           RowBox[{"AxesLabel", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], 
+             "}"}]}]}], "]"}], ",", 
+         RowBox[{"func", "\[Equal]", "2"}], ",", 
+         RowBox[{"Plot3D", "[", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", 
+             RowBox[{"2", "*", 
+              RowBox[{"(", 
+               RowBox[{"1", "-", 
+                SqrtBox[
+                 SubscriptBox["x", "1"]]}], ")"}]}]], 
+            RowBox[{"(", 
+             RowBox[{
+              SubscriptBox["x", "1"], "-", 
+              SqrtBox[
+               SubscriptBox["x", "1"]], "+", 
+              RowBox[{"\[Sqrt]", 
+               RowBox[{"(", 
+                RowBox[{
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}], "2"], "+", 
+                 RowBox[{"4", "*", 
+                  RowBox[{"Max", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["x", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "x"}]}], ",", 
+                    RowBox[{
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["y", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "y"}]}]}], 
+                   "]"}], "*", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "-", 
+                    SubscriptBox["x", "1"]}], ")"}], "*", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+           ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+           RowBox[{"PlotStyle", "\[Rule]", 
+            RowBox[{"{", "Orange", "}"}]}], ",", 
+           RowBox[{"AxesLabel", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], 
+             "}"}]}]}], "]"}], ",", 
+         RowBox[{"func", "\[Equal]", "3"}], ",", 
+         RowBox[{"Plot3D", "[", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", 
+             RowBox[{"2", "*", 
+              RowBox[{"(", 
+               RowBox[{"1", "-", 
+                SqrtBox[
+                 SubscriptBox["x", "1"]]}], ")"}]}]], 
+            RowBox[{"(", 
+             RowBox[{
+              SubscriptBox["x", "1"], "-", 
+              SqrtBox[
+               SubscriptBox["x", "1"]], "+", 
+              RowBox[{"\[Sqrt]", 
+               RowBox[{"(", 
+                RowBox[{
+                 SuperscriptBox[
+                  RowBox[{"(", 
+                   RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}], "2"], "+", 
+                 RowBox[{"4", "*", 
+                  RowBox[{"Min", "[", 
+                   RowBox[{"1", "-", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["x", "2"]}], "-", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "x"}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["y", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "y"}]}], "]"}], 
+                  "*", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "-", 
+                    SubscriptBox["x", "1"]}], ")"}], "*", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+           ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+           RowBox[{"PlotStyle", "\[Rule]", 
+            RowBox[{"{", "Orange", "}"}]}], ",", 
+           RowBox[{"AxesLabel", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], 
+             "}"}]}]}], "]"}], ",", 
+         RowBox[{"func", "\[Equal]", "4"}], ",", 
+         RowBox[{"Plot", "[", 
+          RowBox[{
+           FractionBox[
+            RowBox[{
+             SubscriptBox["x", "1"], "-", 
+             SqrtBox[
+              SubscriptBox["x", "1"]], "+", 
+             SqrtBox[
+              RowBox[{
+               SuperscriptBox[
+                RowBox[{"(", 
+                 RowBox[{
+                  SubscriptBox["x", "1"], "-", 
+                  SqrtBox[
+                   SubscriptBox["x", "1"]]}], ")"}], "2"], "+", 
+               RowBox[{"4", "*", 
+                RowBox[{"(", 
+                 RowBox[{"1", "-", 
+                  RowBox[{
+                   FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                   SuperscriptBox["x", "2"], 
+                   FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "x"}]}], ")"}], 
+                "*", 
+                RowBox[{"(", 
+                 RowBox[{"1", "-", 
+                  SubscriptBox["x", "1"]}], ")"}], "*", 
+                RowBox[{"(", 
+                 RowBox[{"1", "-", 
+                  SqrtBox[
+                   SubscriptBox["x", "1"]]}], ")"}]}]}]]}], 
+            RowBox[{"2", "*", 
+             RowBox[{"(", 
+              RowBox[{"1", "-", 
+               SqrtBox[
+                SubscriptBox["x", "1"]]}], ")"}]}]], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+           RowBox[{"PlotStyle", "\[Rule]", 
+            RowBox[{"{", "Orange", "}"}]}], ",", 
+           RowBox[{"AxesLabel", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<x\>\"", ",", "\"\<y\>\""}], "}"}]}]}], "]"}], ",", 
+         "True", ",", "Nothing"}], "]"}]}], ";", "\n", 
+      RowBox[{"formula", "=", 
+       RowBox[{"Switch", "[", 
+        RowBox[{"func", ",", "1", ",", 
+         RowBox[{"\"\<Function Formula: \>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"TraditionalForm", "[", 
+            RowBox[{
+             FractionBox["1", 
+              RowBox[{"2", "*", 
+               RowBox[{"(", 
+                RowBox[{"1", "-", 
+                 SqrtBox[
+                  SubscriptBox["x", "1"]]}], ")"}]}]], 
+             RowBox[{"(", 
+              RowBox[{
+               SubscriptBox["x", "1"], "-", 
+               SqrtBox[
+                SubscriptBox["x", "1"]], "+", 
+               RowBox[{"\[Sqrt]", 
+                RowBox[{"(", 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}], "2"], "+", 
+                  RowBox[{"4", "*", 
+                   RowBox[{"Min", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["x", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "x"}]}], ",", 
+                    RowBox[{
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["y", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "y"}]}]}], 
+                    "]"}], "*", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    SubscriptBox["x", "1"]}], ")"}], "*", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+            "]"}], "]"}]}], ",", "2", ",", 
+         RowBox[{"\"\<Function Formula: \>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"TraditionalForm", "[", 
+            RowBox[{
+             FractionBox["1", 
+              RowBox[{"2", "*", 
+               RowBox[{"(", 
+                RowBox[{"1", "-", 
+                 SqrtBox[
+                  SubscriptBox["x", "1"]]}], ")"}]}]], 
+             RowBox[{"(", 
+              RowBox[{
+               SubscriptBox["x", "1"], "-", 
+               SqrtBox[
+                SubscriptBox["x", "1"]], "+", 
+               RowBox[{"\[Sqrt]", 
+                RowBox[{"(", 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}], "2"], "+", 
+                  RowBox[{"4", "*", 
+                   RowBox[{"Max", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["x", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "x"}]}], ",", 
+                    RowBox[{
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["y", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "y"}]}]}], 
+                    "]"}], "*", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    SubscriptBox["x", "1"]}], ")"}], "*", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+            "]"}], "]"}]}], ",", "3", ",", 
+         RowBox[{"\"\<Function Formula: \>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"TraditionalForm", "[", 
+            RowBox[{
+             FractionBox["1", 
+              RowBox[{"2", "*", 
+               RowBox[{"(", 
+                RowBox[{"1", "-", 
+                 SqrtBox[
+                  SubscriptBox["x", "1"]]}], ")"}]}]], 
+             RowBox[{"(", 
+              RowBox[{
+               SubscriptBox["x", "1"], "-", 
+               SqrtBox[
+                SubscriptBox["x", "1"]], "+", 
+               RowBox[{"\[Sqrt]", 
+                RowBox[{"(", 
+                 RowBox[{
+                  SuperscriptBox[
+                   RowBox[{"(", 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}], "2"], "+", 
+                  RowBox[{"4", "*", 
+                   RowBox[{"Min", "[", 
+                    RowBox[{"1", "-", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["x", "2"]}], "-", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "x"}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["y", "2"]}], "+", 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "y"}]}], "]"}], 
+                   "*", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    SubscriptBox["x", "1"]}], ")"}], "*", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+            "]"}], "]"}]}], ",", "4", ",", 
+         RowBox[{"\"\<Function Formula: \>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"TraditionalForm", "[", 
+            FractionBox[
+             RowBox[{
+              SubscriptBox["x", "1"], "-", 
+              SqrtBox[
+               SubscriptBox["x", "1"]], "+", 
+              SqrtBox[
+               RowBox[{
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{
+                   SubscriptBox["x", "1"], "-", 
+                   SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}], "2"], "+", 
+                RowBox[{"4", "*", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", 
+                   RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SqrtBox[
+                    SubscriptBox["x", "1"]], "-", "1"}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", 
+                    SuperscriptBox["x", "2"], 
+                    FractionBox[
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", 
+                    SqrtBox[
+                    SubscriptBox["x", "1"]]}], 
+                    RowBox[{
+                    SubscriptBox["x", "1"], "-", "1"}]], "*", "x"}]}], ")"}], 
+                 "*", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", 
+                   SubscriptBox["x", "1"]}], ")"}], "*", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", 
+                   SqrtBox[
+                    SubscriptBox["x", "1"]]}], ")"}]}]}]]}], 
+             RowBox[{"2", "*", 
+              RowBox[{"(", 
+               RowBox[{"1", "-", 
+                SqrtBox[
+                 SubscriptBox["x", "1"]]}], ")"}]}]], "]"}], "]"}]}]}], 
+        "]"}]}], ";", "\n", 
+      RowBox[{"Grid", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"plot", ",", "SpanFromLeft"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"formula", ",", "SpanFromLeft"}], "}"}]}], "}"}], "]"}]}]}],
+     "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"func", ",", "4", ",", "\"\<Select Function\>\""}], "}"}], ",", 
+     
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"4", "\[Rule]", "\"\<N-negation\>\""}], ",", 
+       RowBox[{"1", "\[Rule]", "\"\<T-norm\>\""}], ",", 
+       RowBox[{"2", "\[Rule]", "\"\<S-conorm\>\""}], ",", 
+       RowBox[{"3", "\[Rule]", "\"\<I-implication\>\""}]}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Subscript", "[", 
+        RowBox[{"x", ",", "1"}], "]"}], ",", "0.5", ",", "\"\<x1\>\""}], 
+      "}"}], ",", "0.1", ",", "0.9"}], "}"}]}], "]"}]], "Input",ExpressionUUID\
+->"2a174f4f-07b1-4c38-b8f5-f356a51407ab"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b1783647-03bf-4536-af5f-4b2b6d97a98f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 22481, 590, 2286, "Input",ExpressionUUID->"2a174f4f-07b1-4c38-b8f5-f356a51407ab"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
