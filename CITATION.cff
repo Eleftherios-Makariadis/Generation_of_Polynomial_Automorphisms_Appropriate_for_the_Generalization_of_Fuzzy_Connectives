@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: "Eleftherios"
-  given-names: "Makariadis"
+- family-names: "Makariadis"
+  given-names: "Eleftherios"
   orcid: "https://orcid.org/0009-0009-4325-2981"
 title: "Generation of Polynomial Automorphisms Appropriate for the Generalization of Fuzzy Connectives"
 date-released: 2023-09-15
